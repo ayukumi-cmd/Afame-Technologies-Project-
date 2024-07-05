@@ -1,0 +1,104 @@
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #00AAFF, #2a342e);
+  }
+  
+  .calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 90vh;
+    min-width:90vw ;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px)
+    ;
+  }
+  
+  .calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 2px solid #ffa600; /* Thicker border */
+    outline: none;
+    background-color: rgba(255, 255, 255, .9); /* Lighter background */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .calculator-grid > button:hover,
+  .calculator-grid > button:focus {
+    background-color: rgba(255, 255, 255, .95); /* Slightly darker on hover/focus */
+  }
+  
+  .span-two {
+    grid-column: span 2;
+  }
+  
+  .output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, 0.785); /* Slightly darker background */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px; /* More padding */
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  
+  .output .previous-operand {
+    color: rgba(255, 255, 255, .6); /* Softer color for previous operand */
+    font-size: 1.2rem; /* Smaller font size */
+  }
+  
+  .output .current-operand {
+    color: #ff9100; /* Gold color for current operand */
+    font-size: 3rem; /* Larger font size */
+    font-weight: bold; /* Bold font weight */
+  }
+  .nav{
+   justify-content: center; 
+   text-align: center;
+   margin-top:none;
+  }
+  .nav a {
+    text-decoration: none;
+    color: rgb(234, 226, 219);
+  }
+  @media only screen and (max-width: 400px){
+    *{
+      margin: none;
+      padding: none;
+    }
+    .calculator-grid {
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: minmax(80px, auto) repeat(5, 80px)
+    }
+  .nav{
+   justify-content: center; 
+   text-align: center;
+   margin-top:5px;
+  }
+  .nav a {
+    text-decoration: none;
+    color: rgb(0, 62, 128);
+    font-family: 'Oi', cursive;
+    font-size: 15px;
+  }
+  .cc{
+    font-family: 'Oi', cursive;
+    font-size: 15px;
+  }
+  #Sr {
+   color: #1f0315;
+  }
+  }
+ 
+ 
