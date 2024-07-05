@@ -17,3 +17,4 @@ script.js: The JavaScript file that handles the calculator logic.
 Contributing
 Feel free to fork this repository and make improvements. Pull requests are welcome!
 
+![afame_image](https://github.com/ayukumi-cmd/Afame-Technologies-Project-/assets/98808592/73cf910a-f230-4b7e-b7f8-dfe99d775752)
